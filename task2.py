@@ -9,9 +9,11 @@ If you are stuck, don't forget to refer to your assignment on lists to help you 
 The return value is the largest value in the list
 (2 points)
 """
-def largest():
+def largest(a):
+    a = list(a)
+    a.sort()
+    return a[-1]
   
-  return
 
 if __name__ == "__main__":
   assert largest((3,1,4,7,13,9)) == 13
